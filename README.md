@@ -100,3 +100,7 @@ git diff HEAD origin/main              # 변경 내용 검토
 - **인터넷 없는 환경**: hook은 silent fail, claude는 정상 시작 (단 sync 안 됨)
 - **conflict 시**: `--ff-only`라서 fast-forward 못하면 pull 실패 → 조용히 무시. 사용자가 수동 처리 필요
 - **submodule 자동 update**: 카파시 가이드가 바뀌면 모르는 새 컨텍스트가 달라질 수 있음. 가끔 `cd ~/claude/external/karpathy-skills && git log -5` 로 확인 권장
+
+## 의존성
+
+- statusline은 node 기반 — Claude Code 자체가 Node로 동작하므로 추가 설치 불필요(jq 의존 제거).

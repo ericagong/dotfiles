@@ -1,5 +1,13 @@
 {
-  "skipAutoPermissionPrompt": true,
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node ~/claude/.claude/statusline-command.js"
+  },
+  "language": "한국어",
+  "effortLevel": "high",
   "hooks": {
     "SessionStart": [
       {
