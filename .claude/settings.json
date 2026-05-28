@@ -1,0 +1,18 @@
+{
+  "skipAutoPermissionPrompt": true,
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd ~/claude && git pull --ff-only --quiet 2>/dev/null && git submodule update --remote --quiet 2>/dev/null; true",
+            "timeout": 10,
+            "statusMessage": "claude 설정 동기화 중..."
+          }
+        ]
+      }
+    ]
+  }
+}
