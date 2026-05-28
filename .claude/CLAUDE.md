@@ -1,6 +1,6 @@
 # Global CLAUDE.md
 
-@~/dotfiles/external/karpathy-skills/CLAUDE.md
+@~/claude/external/karpathy-skills/CLAUDE.md
 
 ## 언어 규칙
 
